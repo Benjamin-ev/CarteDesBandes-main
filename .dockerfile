@@ -3,4 +3,4 @@ WORKDIR /var/www/html
 
 COPY index.php index.php
 COPY . .
-EXPOSE 80
+EXPOSE 90
