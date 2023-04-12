@@ -18,10 +18,6 @@ $u=$_SERVER['HTTP_USER_AGENT'];
 
 //~ filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING)
 
-if(isset($_SERVER['REQUEST_URI']) and $_SERVER['REQUEST_URI'] == '') {
-	require __DIR__ . '/views/index.html';
-}
-
 if(isset($_GET['u']) xor isset($_GET['un'])){
 	$manager = new UserManagerPDO($db);
 }elseif(isset($_GET['b'])){
